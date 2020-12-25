@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h2>HTML Forms</h2>
+    <div>
+        <form action="get">
+            <fieldset>
+                <legend style="text-align: center;">Personal Information</legend>
+                <label for="">First Name:</label>
+                <br>
+                <input type="text" name="fname" id="" value="First Name">
+                <br>
+                <label for="">Last Name:</label>
+                <br>
+                <input type="text" name="lname" id="" value="Last Name">
+                <br>
+                <label for="">Gender : </label>
+                <input type="radio" name="gender">
+                <label for="">Male</label>
+                <input type="radio" name="gender">
+                <label for="">Female</label>
+            </fieldset>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+    <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+    <form action="/action_page.php">
+        <input list="browsers">
+        <datalist id="browsers">
+            <option value="Internet Explorer">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
+    </form>
+
+    <form action="/action_page.php" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        0
+        <input type="range" id="a" name="a" value="50">
+        1000 +
+        <input type="number" id="b" name="b" value="50">
+        =
+        <output name="x" for="a b"></output>
+        <br><br>
+        <input type="submit">
+    </form>
+    <br>
+    <iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+    </iframe>
+</body>
+
+</html>

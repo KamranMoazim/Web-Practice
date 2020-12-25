@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Index 5</title>
+
+		<style>
+			.one {
+				background-image: url("ok/cellphone.jpg");
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+			table,
+			th,
+			tr,
+			td {
+				border: 1px groove palevioletred;
+			}
+			th,
+			td {
+				padding: 1%;
+			}
+			table {
+				border-spacing: 0.1cm;
+			}
+            #t01{
+                width: 100%;
+                background-color: teal;
+            }
+            #t01 tr:nth-child(even){
+                background-color: tomato;
+            }
+            #t01 tr:nth-child(odd){
+                background-color:violet;
+            }
+            #t01 th{
+                color: white;
+                background-color: yellowgreen;
+            }
+		</style>
+	</head>
+
+	<body>
+		<div class="one">
+			<h2>Background Cover</h2>
+			<p>
+				Set the background-size property to "cover" and the background image
+				will cover the entire element, in this case the body element. Lorem
+				ipsum dolor sit amet consectetur adipisicing elit. Hic officia laborum
+				soluta odio qui quasi necessitatibus nam fuga, maiores dicta delectus
+				obcaecati optio, iusto ratione atque nobis cumque officiis quisquam.
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga magnam
+				distinctio culpa ratione aperiam, suscipit, laborum velit ad impedit,
+				eveniet dicta nobis cumque dolorum obcaecati a sequi iusto qui nemo.
+				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum,
+				doloribus esse. Quidem ex cumque porro quod soluta iste nam dolorum ad
+				officiis facere natus consectetur rerum incidunt, dolore rem.
+				Perspiciatis! Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+				Fuga, consequuntur. Soluta necessitatibus vitae corporis perspiciatis
+				excepturi omnis consequuntur laudantium tempore vel cumque eligendi
+				reiciendis corrupti dolorum amet, nesciunt, sunt porro. Lorem ipsum
+				dolor sit amet consectetur adipisicing elit. Ut eius dignissimos culpa
+				assumenda accusamus, consequuntur corporis aut aliquam incidunt officia,
+				laudantium deserunt rerum atque vel commodi, iste dolorum molestias
+				quam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus
+				del
+			</p>
+		</div>
+
+		<table style="width: 50%;">
+			<tr>
+				<th>Name</th>
+				<th>F.Name</th>
+				<th>Age</th>
+			</tr>
+			<tr>
+				<td>Kamran</td>
+				<td>Naseer</td>
+				<td>20</td>
+			</tr>
+			<tr>
+				<td>Ali</td>
+				<td>Ameen</td>
+				<td>63</td>
+			</tr>
+		</table>
+		<br />
+		<table style="width: 20%;">
+			<tr>
+				<th>Name</th>
+				<th colspan="2">Telephone</th>
+			</tr>
+			<tr>
+				<td>Kamran</td>
+				<td>83294892</td>
+				<td>32487347</td>
+			</tr>
+		</table>
+		<br />
+		<table style="width: 100%;">
+			<tr>
+				<th>Name</th>
+				<td>Bill Gates</td>
+			</tr>
+			<tr>
+				<th rowspan="2">Telephone</th>
+				<td>55577854</td>
+			</tr>
+			<tr>
+				<td>55577855</td>
+			</tr>
+        </table>
+        <br>
+        <table style="width: 50%;" id="t01">
+            <caption><h1>Monthly Report</h1></caption>
+            <tr>
+                <th>Months</th>
+                <th>Salary</th>
+            </tr>
+            <tr>
+                <td>Jan</td>
+                <td>35454</td>
+            </tr>
+            <tr>
+                <td>Feb</td>
+                <td rowspan="2">34324</td>
+            </tr>
+            <tr>
+                <td>March</td>
+            </tr>
+        </table>
+	</body>
+</html>
